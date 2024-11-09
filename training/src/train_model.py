@@ -65,7 +65,7 @@ def optimize(objective: Callable, space: dict):
         fn=objective,
         space=space,
         algo=tpe.suggest,
-        max_evals=100,
+        max_evals=95,
         trials=trials,
     )
     print("The best hyperparameters are : ", "\n")
